@@ -386,6 +386,16 @@ body {
     box-shadow: 0 50px 30px 0 rgba(0, 0, 0, 0.15);
 }
 
+.image__unit {
+    width: 679px;
+    height: 482px;
+    display: none;
+}
+
+.image__unit_active {
+    display: block;
+}
+
 .image__button {
     display: none;
 }
@@ -445,8 +455,7 @@ body {
     gap: 30px;
 }
 
-.slider__prev,
-.slider__next {
+.slider__arrow {
     cursor: pointer;
 }
 
