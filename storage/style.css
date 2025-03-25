@@ -359,7 +359,6 @@ body {
 
 .projects__city {
     grid-area: 1 / 2 / 2 / 3;
-
 }
 
 .projects__city span:not(:last-child) {
@@ -373,6 +372,7 @@ body {
     line-height: 139%;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
 }
 
 .city__unit_active {
@@ -438,14 +438,24 @@ body {
     text-transform: uppercase;
     color: #e3b873;
     margin: 0 0 6px 0;
-
 }
 
-.projects__data span {
+.citySpan__unit,
+.areaSpan__unit,
+.timeSpan__unit,
+.costSpan__unit {
     font-weight: 400;
     font-size: 13px;
     line-height: 164%;
     color: #fff;
+    display: none;
+}
+
+.citySpan__unit_active,
+.timeSpan__unit_active,
+.areaSpan__unit_active,
+.costSpan__unit_active {
+    display: block;
 }
 
 .projects__slider {
@@ -470,6 +480,7 @@ body {
     width: 9px;
     height: 9px;
     background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
 }
 
 .slider__dot_active {
